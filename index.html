@@ -18,6 +18,7 @@
   <link rel="canonical" href="https://level-ui.github.io/details.de/">
   <link rel="alternate" hreflang="en" href="https://level-ui.github.io/details.en/">
   <link rel="alternate" hreflang="de" href="https://level-ui.github.io/details.de/">
+  <link rel="alternate" hreflang="ro" href="https://level-ui.github.io/details.ro/">
   <link rel="alternate" hreflang="x-default" href="https://level-ui.github.io/details.en/">
 
   <meta property="og:type" content="website">
@@ -29,7 +30,7 @@
     content="Digitale Produkte, Websites und Benutzeroberflächen mit klarer Strategie, hochwertigem Design und belastbarer technischer Umsetzung."
   >
   <meta property="og:url" content="https://level-ui.github.io/details.de/">
-  <meta property="og:image" content="https://level-ui.github.io/details.en/level-ui-og.jpg">
+  <meta property="og:image" content="https://level-ui.github.io/details.de/level-ui-og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Level UI — Webentwicklung, UX/UI und digitale Plattformen">
@@ -40,7 +41,7 @@
     name="twitter:description"
     content="Digitale Produkte, Websites und Benutzeroberflächen mit klarer Strategie, hochwertigem Design und belastbarer technischer Umsetzung."
   >
-  <meta name="twitter:image" content="https://level-ui.github.io/details.en/level-ui-og.jpg">
+  <meta name="twitter:image" content="https://level-ui.github.io/details.de/level-ui-og.jpg">
 
   <script type="application/ld+json">
   {
@@ -63,9 +64,12 @@
         "name": "Switzerland"
       }
     ],
-    "availableLanguage": ["de", "en"],
+    "availableLanguage": ["de", "en", "ro"],
     "sameAs": [
-      "https://github.com/Level-UI"
+      "https://github.com/Level-UI",
+      "https://www.trustpilot.com/review/levelui.com",
+      "https://levelui.com/",
+      "https://levelui.ro/"
     ]
   }
   </script>
@@ -420,6 +424,31 @@
       background: #f0faf7;
     }
 
+    .reading-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 20px;
+      margin: 34px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .reading-list li {
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .reading-list a {
+      font-weight: 800;
+    }
+
+    .reading-list p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
     .contact-panel {
       padding: clamp(31px, 5vw, 56px);
       border-radius: 24px;
@@ -489,7 +518,8 @@
 
       .service-grid,
       .engagement-grid,
-      .delivery {
+      .delivery,
+      .reading-list {
         grid-template-columns: 1fr;
       }
 
@@ -553,7 +583,10 @@
           <a href="#leistungen">Leistungen</a>
           <a href="#arbeitsweise">Arbeitsweise</a>
           <a href="#projekte">Projektformate</a>
+          <a href="#ratgeber">Ratgeber</a>
           <a href="#kontakt">Kontakt</a>
+          <a href="https://level-ui.github.io/details.en/" hreflang="en" lang="en" title="English">EN</a>
+          <a href="https://level-ui.github.io/details.ro/" hreflang="ro" lang="ro" title="Română">RO</a>
         </nav>
       </div>
 
@@ -676,7 +709,13 @@
         <h2 id="projekte-titel">Geeignete Projektformate</h2>
 
         <p class="section-lead">
-          Die folgenden Formate zeigen typische Einsatzbereiche.
+          Die folgenden Formate zeigen typische Einsatzbereiche. Abgeschlossene
+          Projekte mit Screenshots und Live-Links findest du im
+          <a
+            href="https://levelui.de/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Portfolio von Level UI</a>.
         </p>
 
         <div class="engagement-grid">
@@ -700,6 +739,55 @@
             </p>
           </article>
         </div>
+      </section>
+
+      <section id="ratgeber" aria-labelledby="ratgeber-titel">
+        <h2 id="ratgeber-titel">Weiterlesen</h2>
+
+        <p class="section-lead">
+          Ausführliche Leitfäden zu den Fragen, die in unseren Projekten am
+          häufigsten aufkommen. Alle Ratgeber findest du unter
+          <a
+            href="https://levelui.de/resources"
+            target="_blank"
+            rel="noopener noreferrer"
+          >levelui.de/resources</a>.
+        </p>
+
+        <ul class="reading-list">
+          <li>
+            <a
+              href="https://levelui.de/resources/how-to-get-a-100-pagespeed-score"
+              target="_blank"
+              rel="noopener noreferrer"
+            >PageSpeed 100 erreichen – und was der Score bedeutet</a>
+            <p>Was ein perfekter Lighthouse-Score misst und was er auslässt.</p>
+          </li>
+          <li>
+            <a
+              href="https://levelui.de/resources/website-redesign-without-losing-seo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >SEO beim Website-Relaunch: so verlierst du keine Rankings</a>
+            <p>Die Checkliste für URLs, Inhalte und Weiterleitungen vor dem Livegang.</p>
+          </li>
+          <li>
+            <a
+              href="https://levelui.de/resources/wcag-eaa-compliance-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+            >European Accessibility Act &amp; WCAG 2.2</a>
+            <p>Für wen der EAA gilt und was WCAG 2.2 AA tatsächlich verlangt.</p>
+          </li>
+          <li>
+            <a
+              href="https://levelui.de/resources/figma-designs-before-development"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Brauchst du noch Figma vor der Entwicklung?</a>
+            <p>Wann sich ein Mockup lohnt und wann es ein Projekt nur bremst.</p>
+          </li>
+        </ul>
       </section>
 
       <section id="kontakt" aria-labelledby="kontakt-titel">
@@ -731,12 +819,9 @@
       <p>&copy; 2026 Level UI. UX/UI, Webentwicklung und digitale Plattformen.</p>
 
       <div class="footer-links">
-        <a href="https://level-ui.github.io/details.en/" hreflang="en" lang="en">English version</a>
-        <a
-          href="https://levelui.de/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >levelui.de</a>
+        <a href="https://level-ui.github.io/details.en/" hreflang="en" lang="en">English</a>
+        <a href="https://level-ui.github.io/details.ro/" hreflang="ro" lang="ro">Română</a>
+        <a href="https://levelui.de/" target="_blank" rel="noopener noreferrer">levelui.de</a>
       </div>
     </div>
   </footer>
